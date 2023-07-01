@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="./img/album-de-fotos-scrapbook-tema-familia-album-de-familia-v3-album-de-familia.jpg" style="width:50%;"id="family_img">
+    <h4 id="family_nome"></h4>
+    <button onclick="update()">proxímo</button>
+    
+</body>
+<script>
+    var imagens=["https://image.freepik.com/vetores-gratis/icone-dos-desenhos-animados-do-homem-sobre-o-fundo-branco_24908-6960.jpg","https://tse3.mm.bing.net/th?id=OIP.2RcniesG5fe4NDu5yY9CrwAAAA&pid=Api&P=0&h=180","https://media.istockphoto.com/id/1279985978/pt/vetorial/cartoon-scene-with-child-girl-on-white-background-illustration.jpg?s=1024x1024&w=is&k=20&c=qHb1RHYud0ZMd2T_O-iZn2BlVmP0Cna2XiS1fgzgdZM="]
+   var nomes=["Rodrigo","Sônia","Maria"]
+   var i=0
+function update(){
+    i++
+    var familyArray=2
+    if(i>familyArray){
+        i=0
+    }
+    var updateImage=imagens[i]
+    var updateNomes=nomes[i]
+    document.getElementById("family_img").src=updateImage
+    document.getElementById("family_nome").innerHTML=updateNomes
+}  
+</script>
+</html>
